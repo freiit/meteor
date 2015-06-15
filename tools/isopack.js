@@ -1126,7 +1126,7 @@ _.extend(Isopack.prototype, {
     builder = builder.enter(toolPath);
 
     // Transpile the files we selected
-    var babel = require("babel");
+    var babel = require("babel-core");
     pathsToTranspile.forEach((path) => {
       var fullPath = files.convertToOSPath(
         files.pathJoin(files.getCurrentToolsDir(), path));

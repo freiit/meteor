@@ -1,4 +1,5 @@
-require('babel/register')(require('../../babel-config.js'));
+require('babel-core/register')(require('../../babel-config.js'));
+require("babel-core/external-helpers");
 
 var _ = require('underscore');
 var assert = require('assert');

@@ -3,6 +3,7 @@
 module.exports = {
   sourceMaps: true,
   compact: false,
+  externalHelpers: true,
   whitelist: [
     'es6.arrowFunctions',
     'es6.blockScoping',
