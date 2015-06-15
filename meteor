@@ -107,7 +107,8 @@ if [ -d "$SCRIPT_DIR/.git" ] || [ -f "$SCRIPT_DIR/.git" ]; then
         install_dev_bundle
     fi
 
-    export BABEL_CACHE_PATH="$SCRIPT_DIR/.meteor/babel-cache.json"
+    # Put in top level dir so that we don't have to make a directory
+    export BABEL_CACHE_PATH="$SCRIPT_DIR/.babel-cache.json"
 fi
 
 DEV_BUNDLE="$SCRIPT_DIR/dev_bundle"
